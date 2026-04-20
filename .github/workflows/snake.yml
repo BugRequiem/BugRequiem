@@ -1,0 +1,32 @@
+name: Generate Snake
+
+on:
+  schedule:
+    # 每 12 小时自动执行一次
+    - cron: "0 */12 * * *"
+  workflow_dispatch: # 允许你在 Actions 页面手动点击触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          # 自动读取当前仓库所有者的 GitHub ID
+          github_user_name: ${{ github.repository_owner }}
+          # 生成普通版和暗色版两张 SVG 图片放到 dist 目录下
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Push to GitHub pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output # 将生成的图片推送到 output 分支
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
