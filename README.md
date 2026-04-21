@@ -23,7 +23,7 @@
 
 ### Skill Tree
 
-![Skills](https://skillicons.dev/icons?i=ts,js,python,java,c,cpp,pytorch,vue,nodejs,mysql,postgres,redis,docker,git,vscode&perline=8)
+![Skills](https://skillicons.dev/icons?i=ts,js,python,java,c,cpp,ros,pytorch,vue,nodejs,mysql,postgres,redis,docker,git,vscode&perline=8)
 
 ### Daily Buffs
 
@@ -52,16 +52,6 @@
 <div align="center">
   <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=BugRequiem&bg_color=fff8fb&color=ff6b9e&line=7bdff2&point=ffd166&area=true&hide_border=true" alt="activity graph" />
 </div>
-
----
-
-## Featured Missions
-
-| Mission | Description | Tech |
-| --- | --- | --- |
-| [Project Alpha](https://github.com/BugRequiem) | A polished project with clear product value and stable architecture. | TypeScript, React |
-| [Project Beta](https://github.com/BugRequiem) | A backend-heavy service focused on performance and maintainability. | Node.js, PostgreSQL |
-| [Project Gamma](https://github.com/BugRequiem) | A fun experimental build with playful interaction design. | Next.js, Tailwind |
 
 ---
 
